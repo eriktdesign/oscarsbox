@@ -84,6 +84,7 @@ a:hover:not(.button) {
 	background: url('images/hero-background.webp') center/cover no-repeat;
 	text-align: center;
 	padding: 100px 20px;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,.6)
 }
 .hero img {
 	max-width: 600px;
