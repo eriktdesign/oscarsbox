@@ -54,6 +54,9 @@
     a, a:visited, a:active {
       color: #cccccc;
     }
+    a:hover:not(.button) {
+      color: #bada55;
+    }
     .hero {
       background: url('images/hero-background.webp') center/cover no-repeat;
       text-align: center;
@@ -125,6 +128,11 @@
       text-transform: uppercase;
       font-family: 'Road Rage', sans-serif;
       margin: 10px 0;
+    }
+    form button:hover,
+    a.button:hover {
+      --shake-intensity: 1px;
+      animation: shake 0.4s infinite linear;
     }
   </style>
 </head>
