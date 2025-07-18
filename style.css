@@ -26,6 +26,12 @@
 /* ==========================
    Base Styles
    ========================== */
+html {
+	scroll-behavior: smooth;
+	scrollbar-color: #bada55 #111;
+	scrollbar-width: thin;
+	
+}
 body {
 	margin: 0;
 	font-family: sans-serif;
