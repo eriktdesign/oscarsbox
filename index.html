@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oscar's Box</title>
+  <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #111;
+      color: white;
+    }
+    h1, h2, h3 {
+      font-family: 'Road Rage', cursive;
+      color: #bada55;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 64px;
+    }
+    h2 {
+      font-size: 48px;
+    }
+    h3 {
+      font-size: 36px;
+    }
+    .hero {
+      background: url('images/hero-background.webp') center/cover no-repeat;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero img {
+      max-width: 600px;
+      width: 80%;
+      margin-bottom: 20px;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .bio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+    .bio-member {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .bio-member img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    form input, form textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #bada55;
+      color: #111;
+      border: none;
+      padding: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <img src="images/oscars-box-logo.webp" alt="Oscar's Box Logo">
+    <p>Covering rock hits from the 70s, 80s, 90s, and 2000s</p>
+  </section>
+
+  <section class="section">
+    <h2>Watch Us Rock</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section class="section">
+    <h2>Upcoming Shows</h2>
+    <div id="bandsintown-widget" data-artist-name="Oscar's Box"></div>
+    <script src="https://widget.bandsintown.com/main.min.js"></script>
+  </section>
+
+  <section class="section">
+    <h2>Meet the Band</h2>
+    <div class="bio-grid">
+      <div class="bio-member">
+        <img src="https://via.placeholder.com/300x300?text=Greg+Naylor" alt="Greg Naylor">
+        <h3>Greg Naylor</h3>
+        <p>Guitar and Vocals</p>
+      </div>
+      <div class="bio-member">
+        <img src="https://via.placeholder.com/300x300?text=Karl+Boltz" alt="Karl Boltz">
+        <h3>Karl Boltz</h3>
+        <p>Lead Guitar</p>
+      </div>
+      <div class="bio-member">
+        <img src="https://via.placeholder.com/300x300?text=Tom+Barnett" alt="Tom Barnett">
+        <h3>Tom Barnett</h3>
+        <p>Drums</p>
+      </div>
+      <div class="bio-member">
+        <img src="https://via.placeholder.com/300x300?text=Iggy+Taylor" alt="Iggy Taylor">
+        <h3>Iggy Taylor</h3>
+        <p>Keys</p>
+      </div>
+      <div class="bio-member">
+        <img src="https://via.placeholder.com/300x300?text=Erik+Teichmann" alt="Erik Teichmann">
+        <h3>Erik Teichmann</h3>
+        <p>Bass</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+</body>
+</html>
