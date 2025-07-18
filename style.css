@@ -85,7 +85,9 @@ a:hover:not(.button) {
 	margin-top: 20px;
 }
 .bio-member {
-	background-color: #222;
+	background: #222 url('images/tolex.webp') center/cover no-repeat;
+	border: 2px solid rgba(255,255,255,0.25);
+	box-shadow: 0 5px 10px rgba(0,0,0,0.5);
 	padding: 20px;
 	border-radius: 10px;
 	max-width: 250px;
@@ -99,6 +101,12 @@ a:hover:not(.button) {
 }
 .bio-member h3 {
 	margin: 0;
+}
+.bio-member:nth-child(odd) {
+	transform: rotate(-1deg);
+}
+.bio-member:nth-child(even) {
+	transform: rotate(1deg);
 }
 form {
 	display: flex;
