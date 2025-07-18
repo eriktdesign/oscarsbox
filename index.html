@@ -6,6 +6,30 @@
   <title>Oscar's Box</title>
   <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
   <style>
+    /* Shake keyframes */
+    @keyframes shake {
+    0%   { transform: translate(calc(0.33 * var(--shake-intensity)), calc(0.33 * var(--shake-intensity))) rotate(0deg); }
+    10%  { transform: translate(calc(-0.33 * var(--shake-intensity)), calc(-0.66 * var(--shake-intensity))) rotate(-1deg); }
+    20%  { transform: translate(calc(-1 * var(--shake-intensity)), 0px) rotate(1deg); }
+    30%  { transform: translate(var(--shake-intensity), calc(0.66 * var(--shake-intensity))) rotate(0deg); }
+    40%  { transform: translate(calc(0.33 * var(--shake-intensity)), calc(-0.33 * var(--shake-intensity))) rotate(1deg); }
+    50%  { transform: translate(calc(-0.33 * var(--shake-intensity)), calc(0.66 * var(--shake-intensity))) rotate(-1deg); }
+    60%  { transform: translate(calc(-1 * var(--shake-intensity)), calc(0.33 * var(--shake-intensity))) rotate(0deg); }
+    70%  { transform: translate(var(--shake-intensity), calc(0.33 * var(--shake-intensity))) rotate(-1deg); }
+    80%  { transform: translate(calc(-0.33 * var(--shake-intensity)), calc(-0.33 * var(--shake-intensity))) rotate(1deg); }
+    90%  { transform: translate(calc(0.33 * var(--shake-intensity)), calc(0.66 * var(--shake-intensity))) rotate(0deg); }
+    100% { transform: translate(calc(0.33 * var(--shake-intensity)), calc(-0.66 * var(--shake-intensity))) rotate(-1deg); }
+    }
+
+    /* Pulse keyframes */
+    @keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(var(--pulse-scale));
+    }
+    }
     body {
       margin: 0;
       font-family: sans-serif;
@@ -39,6 +63,12 @@
       max-width: 600px;
       width: 80%;
       margin-bottom: 20px;
+      --shake-intensity: 1px;
+      animation: shake 0.4s infinite linear;
+    }
+    .hero h1.logo {
+        --pulse-scale: 1.05;
+        animation: pulse 0.545s infinite ease-in;
     }
     .section {
       padding: 60px 20px;
@@ -101,7 +131,7 @@
 <body>
 
   <section class="hero">
-    <h1><img src="images/oscars-box-logo.webp" alt="Oscar's Box Logo"></h1>
+    <h1 class="logo"><img src="images/oscars-box-logo.webp" alt="Oscar's Box Logo"></h1>
     <h2>Your favorite rock from the 70's, 80's, 90's and 2000's<br>
     Live music from Lancaster, Pennsylvania</h2>
     <p><a class="button" href="#live">See Us Live</a><br>
