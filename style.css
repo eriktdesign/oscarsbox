@@ -239,9 +239,14 @@ a.button:hover {
 /* ==========================
    Footer Styles
    ========================== */
-footer img.oscar {
-	width: 100px; 
+img.oscar {
+	width: 150px; 
 	height: auto; 
 	display: block; 
 	margin: 20px auto;
+}
+img.oscar:hover {
+	--shake-intensity: 13px;
+	animation: shake 0.4s infinite linear;
+	cursor: grabbing;
 }
