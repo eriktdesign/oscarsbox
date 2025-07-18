@@ -48,6 +48,18 @@ h2 {
 h3 {
 	font-size: 36px;
 }
+@media screen and (max-width: 799px) {
+	h1 {
+		font-size: 48px;
+	}
+	h2 {
+		font-size: 42px;
+	}
+	h3 {
+		font-size: 32px;
+	}
+	
+}
 a, a:visited, a:active {
 	color: #cccccc;
 }
