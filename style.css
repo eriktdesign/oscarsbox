@@ -134,7 +134,7 @@ a:hover:not(.button) {
 	max-width: 600px;
 }
 .show-list li {
-	background: #222;
+	background: rgba(34,34,34,.5);
 	margin: 15px 0;
 	padding: 20px;
 	border-radius: 10px;
@@ -189,7 +189,7 @@ a:hover:not(.button) {
 	margin-top: 20px;
 }
 .bio-member {
-	background: #222;
+	background: rgba(34,34,34,.5);
 	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 	padding: 20px;
 	border-radius: 10px;
