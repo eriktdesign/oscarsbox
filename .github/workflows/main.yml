@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: Purge Cloudflare Cache
         uses: jakejarvis/cloudflare-purge-action@v0.3.0
-        with:
-          zone: ${{ secrets.CLOUDFLARE_ZONE }}
-          token: ${{ secrets.CLOUDFLARE_TOKEN }}
+        env:
+          CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
+          CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
