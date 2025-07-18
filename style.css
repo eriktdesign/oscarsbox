@@ -1,4 +1,6 @@
-/* Shake keyframes */
+/* ==========================
+   Keyframes (Animations)
+   ========================== */
 @keyframes shake {
 	0%   { transform: translate(calc(0.33 * var(--shake-intensity)), calc(0.33 * var(--shake-intensity))) rotate(0deg); }
 	10%  { transform: translate(calc(-0.33 * var(--shake-intensity)), calc(-0.66 * var(--shake-intensity))) rotate(-1deg); }
@@ -12,8 +14,6 @@
 	90%  { transform: translate(calc(0.33 * var(--shake-intensity)), calc(0.66 * var(--shake-intensity))) rotate(0deg); }
 	100% { transform: translate(calc(0.33 * var(--shake-intensity)), calc(-0.66 * var(--shake-intensity))) rotate(-1deg); }
 }
-
-/* Pulse keyframes */
 @keyframes pulse {
 	100% {
 		transform: scale(1);
@@ -23,6 +23,9 @@
 	}
 }
 
+/* ==========================
+   Base Styles
+   ========================== */
 body {
 	margin: 0;
 	font-family: sans-serif;
@@ -51,6 +54,20 @@ a, a:visited, a:active {
 a:hover:not(.button) {
 	color: #bada55;
 }
+
+/* ==========================
+   Layout Sections
+   ========================== */
+.section {
+	padding: 60px 20px;
+	text-align: center;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+/* ==========================
+   Hero Section
+   ========================== */
 .hero {
 	background: url('images/hero-background.webp') center/cover no-repeat;
 	text-align: center;
@@ -69,83 +86,10 @@ a:hover:not(.button) {
 	margin: 0 auto;
 	max-width: 90vw;
 }
-.section {
-	padding: 60px 20px;
-	text-align: center;
-	max-width: 1080px;
-	margin: 0 auto;
-}
-.bio-grid {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: stretch;
-	max-width: 1000px;
-	margin: 0 auto;
-	margin-top: 20px;
-}
-.bio-member {
-	background: #222;
-	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-	padding: 20px;
-	border-radius: 10px;
-	max-width: 250px;
-	margin: 10px;
-	transition: all .2s;
-}
-.bio-member img {
-	width: 100%;
-	height: auto;
-	border-radius: 10px;
-	margin-bottom: 10px;
-}
-.bio-member h3 {
-	margin: 0;
-}
-.bio-member:nth-child(odd) {
-	transform: rotate(-1deg);
-}
-.bio-member:nth-child(even) {
-	transform: rotate(1deg);
-}
-.bio-member:hover {
-	box-shadow: 0 10px 20px rgba(0,0,0,0.6);
-	transform: scale(1.05) rotate(0deg);
-	z-index: 999;
-}
-form {
-	display: flex;
-	flex-direction: column;
-	max-width: 400px;
-	margin: 0 auto;
-}
-form input, form textarea {
-	padding: 10px;
-	margin: 10px 0;
-	border: none;
-	border-radius: 5px;
-	font-family: sans-serif;
-}
-form button,
-a.button {
-	background-color: #bada55;
-	color: #111;
-	border: none;
-	padding: 10px;
-	font-size: 32px;
-	cursor: pointer;
-	border-radius: 5px;
-	text-decoration: none;
-	display: inline-block;
-	text-transform: uppercase;
-	font-family: 'Road Rage', sans-serif;
-	margin: 10px 0;
-}
-form button:hover,
-a.button:hover {
-	--shake-intensity: 1px;
-	animation: shake 0.4s infinite linear;
-}
+
+/* ==========================
+   Responsive Video
+   ========================== */
 .responsive-video {
 	position: relative;
 	width: 100%;
@@ -160,6 +104,10 @@ a.button:hover {
 	width: 100%;
 	height: 100%;
 }
+
+/* ==========================
+   Show List (Upcoming Shows)
+   ========================== */
 .show-list {
 	list-style: none;
 	padding: 0;
@@ -207,4 +155,93 @@ a.button:hover {
 	font-size: 16px;
 	font-style: italic;
 	text-align: left;
+}
+
+/* ==========================
+   Bio Grid (Band Members)
+   ========================== */
+.bio-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.bio-member {
+	background: #222;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+	padding: 20px;
+	border-radius: 10px;
+	max-width: 250px;
+	margin: 10px;
+	transition: all .2s;
+}
+.bio-member img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+.bio-member h3 {
+	margin: 0;
+}
+.bio-member:nth-child(odd) {
+	transform: rotate(-1deg);
+}
+.bio-member:nth-child(even) {
+	transform: rotate(1deg);
+}
+.bio-member:hover {
+	box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+	transform: scale(1.05) rotate(0deg);
+	z-index: 999;
+}
+
+/* ==========================
+   Form Styles
+   ========================== */
+form {
+	display: flex;
+	flex-direction: column;
+	max-width: 400px;
+	margin: 0 auto;
+}
+form input, form textarea {
+	padding: 10px;
+	margin: 10px 0;
+	border: none;
+	border-radius: 5px;
+	font-family: sans-serif;
+}
+form button,
+a.button {
+	background-color: #bada55;
+	color: #111;
+	border: none;
+	padding: 10px;
+	font-size: 32px;
+	cursor: pointer;
+	border-radius: 5px;
+	text-decoration: none;
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: 'Road Rage', sans-serif;
+	margin: 10px 0;
+}
+form button:hover,
+a.button:hover {
+	--shake-intensity: 1px;
+	animation: shake 0.4s infinite linear;
+}
+
+/* ==========================
+   Footer Styles
+   ========================== */
+footer img.oscar {
+	width: 100px; 
+	height: auto; 
+	display: block; 
+	margin: 20px auto;
 }
