@@ -85,13 +85,13 @@ a:hover:not(.button) {
 	margin-top: 20px;
 }
 .bio-member {
-	background: #222 url('images/tolex.webp') center/cover no-repeat;
-	border: 2px solid rgba(255,255,255,0.25);
-	box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+	background: #222;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 	padding: 20px;
 	border-radius: 10px;
 	max-width: 250px;
 	margin: 10px;
+	transition: all .2s;
 }
 .bio-member img {
 	width: 100%;
@@ -107,6 +107,10 @@ a:hover:not(.button) {
 }
 .bio-member:nth-child(even) {
 	transform: rotate(1deg);
+}
+.bio-member:hover {
+	box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+	transform: scale(1.05) rotate(0deg);
 }
 form {
 	display: flex;
@@ -171,7 +175,12 @@ a.button:hover {
 	justify-content: space-between;
 	align-items: center;
 	font-size: 20px;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+	transition: all .2s;
+}
+.show-list li:hover {
+	transform: scale(1.1);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.6);
 }
 .show-list .date {
 	font-weight: bold;
