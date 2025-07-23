@@ -1,0 +1,38 @@
+[
+  {
+    "date": "2025-06-14T21:00:00-04:00",
+	"description": "",
+	"poster": "",
+	"venue": {
+		"name": "551 West, Lancaster",
+		"address": "551 W King St, Lancaster, PA 17603"
+	}
+  },
+  {
+    "date": "2025-08-30T21:00:00-04:00",
+	"description": "",
+	"poster": "/images/posters/oscars-box-aug-30-551w.webp",
+	"venue": {
+		"name": "551 West, Lancaster",
+		"address": "551 W King St, Lancaster, PA 17603"
+	}
+  },
+  {
+	"date": "2025-10-11T21:00:00-04:00",
+	"description": "",
+	"poster": "/images/posters/oscars-box-oct-11-551w.webp",
+    "venue": {
+		"name": "551 West, Lancaster",
+		"address": "551 W King St, Lancaster, PA 17603"
+	}
+  },
+  {
+    "date": "2025-10-26T20:00:00-04:00",
+	"description": "Spooky Scary Halloween Spectacular!",
+	"poster": "/images/posters/oscars-box-oct-26-lucky-dog.webp",
+	"venue": {
+		"name": "Lucky Dog Café, Lancaster",
+		"address": "1942 Columbia Ave, Lancaster, PA 17603"
+	}
+  }
+]

@@ -145,16 +145,24 @@ a:hover:not(.button) {
 	font-size: 20px;
 	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 	transition: all .2s;
+	line-height: inherit;
 }
 .show-list li:hover {
 	transform: scale(1.1);
 	box-shadow: 0 10px 20px rgba(0,0,0,0.6);
 	z-index: 999;
 }
+.show-list li.past-gig {
+	display: none;
+}
 .show-list .date {
 	font-weight: bold;
 	color: #bada55;
 	margin-right: 15px;
+}
+.show-list .date a {
+	text-decoration: none;
+	color: #bada55;
 }
 .show-list .time {
 	color: #fff;
