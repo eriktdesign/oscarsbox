@@ -9,7 +9,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
 		return;
 	}
 
-	fetch( 'gigs.json?v=20250723' )
+	fetch( 'gigs.json?v=20250723a' )
 		.then( function( response ) {
 			if ( ! response.ok ) {
 				throw new Error( 'Network response was not ok.' );
