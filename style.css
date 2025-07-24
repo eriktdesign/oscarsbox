@@ -152,8 +152,14 @@ a:hover:not(.button) {
 	box-shadow: 0 10px 20px rgba(0,0,0,0.6);
 	z-index: 999;
 }
-.show-list li.past-gig {
+.show-list li.has-poster:hover {
+	cursor: pointer;
+}
+.show-list li.past-gig:not(.show) {
 	display: none;
+}
+.show-list li.past-gig.show {
+	opacity: .6;
 }
 .show-list .date {
 	font-weight: bold;
