@@ -283,15 +283,3 @@ img.oscar:hover {
 	animation: shake 0.4s infinite linear;
 	cursor: grabbing;
 }
-
-/* ==========================
-   Basic Lightbox Styles
-   ========================== */
-/* .basicLightbox__placeholder, 
-.gig-poster {
-	max-width: 80vw !important;
-	max-height: 80vh;
-}
-.basicLightbox h3 a {
-	color: #bada55; 
-}*/
