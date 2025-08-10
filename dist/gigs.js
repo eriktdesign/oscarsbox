@@ -87,6 +87,69 @@ document.addEventListener( 'DOMContentLoaded', function() {
 				} );
 			}
 		} );
+
+		return gigs; // Return the gigs array for further processing
+	} )
+	.then( function( gigs ) {
+		console.log( 'Gigs loaded successfully:', gigs );
+		// Create MusicEvents schema for future gigs
+		var futureGigs = gigs.filter( function( gig ) {
+			return new Date( gig.date ) >= new Date();
+		} );
+		if ( futureGigs.length === 0 ) {
+			console.warn( 'No future gigs found for schema generation.' );
+			return;
+		}
+		// MusicGroup schema
+		var musicGroupSchema = {
+			"@context": "https://schema.org",
+			"@type": "MusicGroup",
+			"name": "Oscar's Box",
+			"description": "Oscar's Box - Your favorite rock from the 70's, 80's, 90's and 2000's. Live music from Lancaster, Pennsylvania.",
+			"genre": ["Rock", "Classic Rock", "Cover Band"],
+			"url": "https://oscarsbox.com",
+			"image": "https://oscarsbox.com/images/oscars-box-logo.webp",
+			"member": [
+				{ "@type": "Person", "name": "Greg Naylor", "role": "Guitar and Vocals" },
+				{ "@type": "Person", "name": "Karl Boltz", "role": "Lead Guitar" },
+				{ "@type": "Person", "name": "Tom Barnett", "role": "Drums" },
+				{ "@type": "Person", "name": "Iggy Taylor", "role": "Keys" },
+				{ "@type": "Person", "name": "Erik Teichmann", "role": "Bass" }
+			]
+		};
+
+		var groupScript = document.createElement( 'script' );
+		groupScript.type = 'application/ld+json';
+		groupScript.textContent = JSON.stringify( musicGroupSchema, null, 2 );
+		document.head.appendChild( groupScript );
+
+		// MusicEvent schema
+		var schemaScript = document.createElement( 'script' );
+		schemaScript.type = 'application/ld+json';
+		var events = futureGigs.map( function( gig ) {
+			return {
+				"@type": "MusicEvent",
+				"name": "Oscar's Box at " + gig.venue.name,
+				"startDate": gig.date,
+				"location": {
+					"@type": "Place",
+					"name": gig.venue.name,
+					"address": gig.venue.address || ''
+				},
+				"performer": {
+					"@type": "MusicGroup",
+					"name": "Oscar's Box"
+				},
+				"image": gig.poster || '',
+				"description": gig.description || ''
+			};
+		} );
+		var schemaData = {
+			"@context": "https://schema.org",
+			"@graph": events
+		};
+		schemaScript.textContent = JSON.stringify( schemaData, null, 2 );
+		document.head.appendChild( schemaScript );
 	} )
 	.then( function() {
 		// If there are any past gigs with .past-gig class, add a "show past gigs" button
