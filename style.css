@@ -283,3 +283,24 @@ img.oscar:hover {
 	animation: shake 0.4s infinite linear;
 	cursor: grabbing;
 }
+ul.social-links {
+	list-style: none;
+	padding: 0;
+	margin: 20px auto 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+ul.social-links li {
+	margin: 0;
+}
+ul.social-links li a img {
+	width: 40px;
+	height: 40px;
+}
+ul.social-links li a img:hover {
+	--shake-intensity: 1px;
+	animation: shake 0.4s infinite linear;
+	cursor: pointer;
+}
