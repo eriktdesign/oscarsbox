@@ -18,7 +18,7 @@
 	}
   },
   {
-	"date": "2025-10-11T21:00:00-04:00",
+	"date": "2025-10-11T20:30:00-04:00",
 	"description": "",
 	"poster": "/images/posters/oscars-box-oct-11-551w.webp",
     "venue": {
@@ -34,5 +34,14 @@
 		"name": "Lucky Dog Café, Lancaster",
 		"address": "1942 Columbia Ave, Lancaster, PA 17603"
 	}
-  }
+  },
+  {
+	"date": "2025-12-20T20:30:00-04:00",
+	"description": "",
+	"poster": "/images/posters/oscars-box-dec-20-551w.webp",
+    "venue": {
+		"name": "551 West, Lancaster",
+		"address": "551 W King St, Lancaster, PA 17603"
+	}
+  },
 ]
