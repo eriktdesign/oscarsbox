@@ -217,7 +217,12 @@ document.addEventListener( 'DOMContentLoaded', function() {
 	 */
 	function formatTime( dateStr ) {
 		var dateObj = new Date( dateStr );
-		var options = { hour: 'numeric', minute: '2-digit', hour12: true };
+		var options = { 
+			hour: 'numeric', 
+			minute: '2-digit', 
+			hour12: true,
+			timeZone: 'America/New_York'
+		};
 		return dateObj.toLocaleTimeString( 'en-US', options );
 	}
 
