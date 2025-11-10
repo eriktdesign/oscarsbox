@@ -43,5 +43,23 @@
 		"name": "551 West, Lancaster",
 		"address": "551 W King St, Lancaster, PA 17603"
 	}
+  },
+  {
+	"date": "2026-01-24T20:00:00-05:00",
+	"description": "",
+	"poster": "",
+	"venue": {
+		"name": "Lucky Dog Café, Lancaster",
+		"address": "1942 Columbia Ave, Lancaster, PA 17603"
+	}
+  },
+  {
+	"date": "2026-02-28T20:00:00-05:00",
+	"description": "",
+	"poster": "",
+	"venue": {
+		"name": "551 West, Lancaster",
+		"address": "551 W King St, Lancaster, PA 17603"
+	}
   }
 ]
