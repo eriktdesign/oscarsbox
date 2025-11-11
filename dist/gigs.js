@@ -80,10 +80,19 @@ document.addEventListener( 'DOMContentLoaded', function() {
 			// Append the list item to the gigs list
 			gigsList.appendChild( li );
 			
-			// Add an event listener to show the lightbox if poster exists
+			// If the gig has a poster, add an event listener to show the lightbox
 			if ( gig.poster ) {
+				// Add an event listener to show the lightbox
 				li.addEventListener( 'click', function() {
 					showGigLightbox( gig );
+				} );
+				// Remove the click event from the poster link
+				dateSpan.querySelector( 'a' ).addEventListener( 'click', function( e ) {
+					e.preventDefault(); // Don't trigger the regular navigation when clicking the date link
+				} );
+				// Prevent clicks on the address bubbling up to the list item
+				venueLink.addEventListener( 'click', function( e ) {
+					e.stopPropagation(); // Don't trigger the lightbox when clicking the venue link
 				} );
 			}
 		} );
