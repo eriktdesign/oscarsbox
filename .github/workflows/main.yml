@@ -6,6 +6,7 @@ on:
 jobs:
   purge:
     runs-on: ubuntu-latest
+    if: ${{ github.event.deployment_status.state == 'success' }}
     steps:
       - name: Purge Cloudflare Cache
         uses: jakejarvis/cloudflare-purge-action@v0.3.0
