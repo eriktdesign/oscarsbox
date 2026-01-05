@@ -10,7 +10,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
 	}
 
 	// Fetch the gigs data from gigs.json
-	fetch( 'gigs.json?v=1763388188' )
+	fetch( 'gigs.json?v=1767649569' )
 	.then( function( response ) {
 		if ( ! response.ok ) {
 			throw new Error( 'Network response was not ok.' );

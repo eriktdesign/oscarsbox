@@ -61,5 +61,50 @@
 		"name": "551 West, Lancaster",
 		"address": "551 W King St, Lancaster, PA 17603"
 	}
+  },
+  {
+	"date": "2026-04-11T19:00:00-04:00",
+	"description": "",
+	"poster": "",
+	"venue": {
+		"name": "Lucky Dog Café, Lancaster",
+		"address": "1942 Columbia Ave, Lancaster, PA 17603"
+	}
+  },
+  {
+	"date": "2026-06-27T19:00:00-04:00",
+	"description": "",
+	"poster": "",
+	"venue": {
+		"name": "Lucky Dog Café, Lancaster",
+		"address": "1942 Columbia Ave, Lancaster, PA 17603"
+	}
+  },
+  {
+	"date": "2026-08-29T19:00:00-04:00",
+	"description": "",
+	"poster": "",
+	"venue": {
+		"name": "Lucky Dog Café, Lancaster",
+		"address": "1942 Columbia Ave, Lancaster, PA 17603"
+	}
+  },
+  {
+	"date": "2026-10-31T19:00:00-04:00",
+	"description": "Halloween Spooktacular!",
+	"poster": "",
+	"venue": {
+		"name": "Lucky Dog Café, Lancaster",
+		"address": "1942 Columbia Ave, Lancaster, PA 17603"
+	}
+  },
+  {
+	"date": "2026-12-19T19:00:00-05:00",
+	"description": "",
+	"poster": "",
+	"venue": {
+		"name": "Lucky Dog Café, Lancaster",
+		"address": "1942 Columbia Ave, Lancaster, PA 17603"
+	}
   }
 ]
