@@ -72,6 +72,15 @@
 	}
   },
   {
+	"date": "2026-05-23T19:00:00-04:00",
+	"description": "Members and Guests Only",
+	"poster": "/images/posters/oscars-box-may-23-elks.webp",
+	"venue": {
+		"name": "Lancaster Elks Lodge #134",
+		"address": "219 N Duke St, Lancaster, PA 17602"	
+	}
+  },
+  {
 	"date": "2026-05-30T20:00:00-04:00",
 	"description": "",
 	"poster": "",
