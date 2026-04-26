@@ -2,7 +2,7 @@
  * gigs.js
  * Loads gigs.json and populates the Upcoming Shows list.
  */
-document.addEventListener( 'DOMContentLoaded', function() {
+function initGigs() {
 	// Select the gigs list element
 	var gigsList = document.querySelector( '.show-list' );
 	if ( ! gigsList ) {
@@ -10,7 +10,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
 	}
 
 	// Fetch the gigs data from gigs.json
-	fetch( 'gigs.json?v=1777141425760' )
+	fetch( 'gigs.json?v=' + window.oscarsBoxVersion )
 	.then( function( response ) {
 		if ( ! response.ok ) {
 			throw new Error( 'Network response was not ok.' );
@@ -100,7 +100,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
 		return gigs; // Return the gigs array for further processing
 	} )
 	.then( function( gigs ) {
-		console.log( 'Gigs loaded successfully:', gigs );
+		console.debug( 'Gigs loaded successfully:', gigs );
 		// Create MusicEvents schema for future gigs
 		var futureGigs = gigs.filter( function( gig ) {
 			return new Date( gig.date ) >= new Date();
@@ -217,7 +217,13 @@ document.addEventListener( 'DOMContentLoaded', function() {
 	 */
 	function formatDate( dateStr ) {
 		var dateObj = new Date( dateStr );
-		var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+		var isNarrow = window.innerWidth < 480;
+		var options = {
+			weekday: isNarrow ? 'short' : 'long',
+			year: 'numeric',
+			month: isNarrow ? 'short' : 'long',
+			day: 'numeric'
+		};
 		return dateObj.toLocaleDateString( 'en-US', options );
 	}
 
@@ -288,4 +294,10 @@ document.addEventListener( 'DOMContentLoaded', function() {
 
 		lightboxInstance.show();
 	}
-} );
+}
+
+if ( document.readyState === 'loading' ) {
+	document.addEventListener( 'DOMContentLoaded', initGigs );
+} else {
+	initGigs();
+}

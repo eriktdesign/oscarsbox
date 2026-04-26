@@ -146,6 +146,7 @@ a:hover:not(.button) {
 	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 	transition: all .2s;
 	line-height: inherit;
+	text-align: left;
 }
 .show-list li:hover {
 	transform: scale(1.1);

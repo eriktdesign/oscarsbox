@@ -128,8 +128,13 @@
     <p><a href="mailto:booking@oscarsbox.com">booking@oscarsbox.com</a></p>
   </footer>
 
-  <script src="/dist/gigs.js?v=1777141414530"></script>
-  <script src="/dist/basicLightbox.min.js"></script>
+  <script type="text/javascript">
+    window.oscarsBoxVersion = '1777234059897';
+    oscarsBoxScript = document.createElement('script');
+    oscarsBoxScript.src = '/dist/gigs.js?v=' + window.oscarsBoxVersion;
+    document.head.appendChild(oscarsBoxScript);
+  </script>
+  <script src="/dist/basicLightbox.min.js" defer async></script>
   <link rel="stylesheet" href="/dist/basicLightbox.min.css">
 </body>
 </html>
