@@ -110,7 +110,7 @@
   {
 	"date": "2026-08-29T17:00:00-04:00",
 	"description": "Eagles Nest Restaurant Benefit - $10 cover",
-	"poster": "",
+	"poster": "/images/posters/oscars-box-aug-29-vaa.webp",
 	"venue": {
 		"name": "Victory Athletic Association",
 		"address": "471 S Ogontz St, York, PA 17403"
@@ -135,6 +135,15 @@
 	}
   },
   {
+	"date": "2026-11-20T19:00:00-05:00",
+	"description": "",
+	"poster": "/images/posters/oscars-box-nov-20-redpin.webp",
+	"venue": {
+		"name": "Red Pin Bar & Grill, Lancaster",
+		"address": "1495 Millport Rd, Lancaster, PA 17602"
+	}
+  },
+  {
 	"date": "2026-11-28T20:00:00-05:00",
 	"description": "",
 	"poster": "",
@@ -150,6 +159,15 @@
 	"venue": {
 		"name": "Lucky Dog Café, Lancaster",
 		"address": "1942 Columbia Ave, Lancaster, PA 17603"
+	}
+  },
+  {
+	"date": "2027-01-15T19:00:00-05:00",
+	"description": "",
+	"poster": "",
+	"venue": {
+		"name": "Red Pin Bar & Grill, Lancaster",
+		"address": "1495 Millport Rd, Lancaster, PA 17602"
 	}
   }
 ]
