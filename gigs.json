@@ -108,6 +108,15 @@
 	}
   },
   {
+	"date": "2026-08-21T20:00:00-04:00",
+	"description": "Greg & Tom from Oscar's Box Acoustic Duo",
+	"poster": "",
+	"venue": {
+		"name": "Red Pin Bar & Grill, Lancaster",
+		"address": "1495 Millport Rd, Lancaster, PA 17602"
+	}
+  },
+  {
 	"date": "2026-08-29T17:00:00-04:00",
 	"description": "Eagles Nest Restaurant Benefit - $10 cover",
 	"poster": "/images/posters/oscars-box-aug-29-vaa.webp",
