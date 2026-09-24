@@ -126,24 +126,6 @@
 	}
   },
   {
-	"date": "2026-09-26T20:00:00-04:00",
-	"description": "",
-	"poster": "",
-	"venue": {
-		"name": "551 West, Lancaster",
-		"address": "551 W King St, Lancaster, PA 17603"
-	}
-  },
-  {
-	"date": "2026-10-31T19:00:00-04:00",
-	"description": "Halloween Spooktacular!",
-	"poster": "",
-	"venue": {
-		"name": "Lucky Dog Café, Lancaster",
-		"address": "1942 Columbia Ave, Lancaster, PA 17603"
-	}
-  },
-  {
 	"date": "2026-11-20T19:00:00-05:00",
 	"description": "",
 	"poster": "/images/posters/oscars-box-nov-20-redpin.webp",
@@ -177,6 +159,15 @@
 	"venue": {
 		"name": "Red Pin Bar & Grill, Lancaster",
 		"address": "1495 Millport Rd, Lancaster, PA 17602"
+	}
+  },
+  {
+	"date": "2027-02-20T19:00:00-05:00",
+	"description": "",
+	"poster": "",
+	"venue": {
+		"name": "Lucky Dog Café, Lancaster",
+		"address": "1942 Columbia Ave, Lancaster, PA 17603"
 	}
   }
 ]
