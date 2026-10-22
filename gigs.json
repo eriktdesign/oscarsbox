@@ -153,6 +153,15 @@
 	}
   },
   {
+	"date": "2027-01-30T19:00:00-04:00",
+	"description": "Members and Guests Only",
+	"poster": "",
+	"venue": {
+		"name": "Lancaster Elks Lodge #134",
+		"address": "219 N Duke St, Lancaster, PA 17602"	
+	}
+  },
+  {
 	"date": "2027-02-20T19:00:00-05:00",
 	"description": "",
 	"poster": "",
